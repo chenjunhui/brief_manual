@@ -70,6 +70,12 @@ git checkout -b <分支名>
 git checkout master
 ```
 
+### 将其他分支合并到当前分支
+
+```bash
+git merge <分支名>
+```
+
 ### 删除分支
 
 ```bash
@@ -115,12 +121,6 @@ pull = fetch + merge
 
 ```bash
 git pull
-```
-
-### 将其他分支合并到当前分支
-
-```bash
-git merge <分支名>
 ```
 
 ## 标签管理
