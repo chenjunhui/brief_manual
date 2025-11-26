@@ -86,7 +86,12 @@ git remote add origin https://github.com/chenjunhui/brief_manual.git
 git push -u origin master
 ```
 
-推送到远程仓库时，需要指定远程仓库的名称，默认是 origin。
+>git push -u origin master‌ 是将本地master分支推送到名为origin的远程仓库，并建立分支追踪关系的Git命令。
+>>git push -u origin master命令解析：
+>>该命令由以下核心要素组成：
+>>-u‌：设置上游关联（upstream），后续推送可直接使用git push简化操作。‌
+>>origin‌：默认远程仓库名称（可通过git remote -v查看）。‌
+>>master‌：本地分支名称，推送后会与远程同名分支建立映射关系。‌
 
 ### 将本地更改推送到远程仓库
 
