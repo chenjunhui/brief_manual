@@ -121,4 +121,4 @@ Markdown 区块引用是在段落开头使用 > 符号 ，然后后面紧跟一�
 
 ## 链接
 
-[菜鸟 Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html)
+[菜鸟 Markdown 教程](https://www.runoob.com/markdown/md-tutorial.html){target="_blank"}
