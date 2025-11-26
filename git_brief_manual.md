@@ -82,8 +82,8 @@ git branch -d <分支名>
 
 ```bash
 git remote add origin <远程地址>
-git remote add origin git://github.com/你的用户名/你的仓库名.git
-git remote add origin https://github.com/你的用户名/你的仓库名.git
+git remote add origin https://github.com/chenjunhui/brief_manual.git
+git push -u origin master
 ```
 
 推送到远程仓库时，需要指定远程仓库的名称，默认是 origin。
