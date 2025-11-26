@@ -92,7 +92,7 @@ git push -u origin master
 
 ```bash
 git push origin <分支名>
-git push origin # 省略分支名，推送所有分支还是当前分支
+git push origin # 省略分支名，则推送当前checkout的分支
 ```
 
 ### 远程仓库删除分支
