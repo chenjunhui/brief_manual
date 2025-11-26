@@ -92,6 +92,7 @@ git push -u origin master
 
 ```bash
 git push origin <分支名>
+git push origin # 推送所有分支
 ```
 
 ### 远程仓库删除分支
