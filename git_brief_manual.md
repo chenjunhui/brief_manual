@@ -7,8 +7,8 @@
 配置个人的用户名称和电子邮件地址，这是为了在每次提交代码时记录提交者的信息
 
 ```bash
-git config --global user.name "runoob"
-git config --global user.email "test@runoob.com"
+git config --global user.name "chenjunhui"
+git config --global user.email "chenjunhui@126.com"
 ```
 
 如果用了 --global 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。
@@ -18,14 +18,6 @@ git config --global user.email "test@runoob.com"
 ### 查看配置信息
 
 要检查已有的配置信息，可以使用 git config --list 命令
-
-## 生成 SSH 密钥（可选）
-
-如果你需要通过 SSH 进行 Git 操作，可以生成 SSH 密钥并添加到你的 Git 托管服务（如 GitHub、GitLab 等）上。
-
-```bash
-ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
-```
 
 ## 初始化仓库
 
@@ -164,3 +156,35 @@ origin  <远程仓库地址> (push)
 origin  https://github.com/chipweinberger/flutter_blue_plus.git (fetch)
 origin  https://github.com/chipweinberger/flutter_blue_plus.git (push)
 ```
+
+## github 设置密钥
+
+### 生成 SSH 密钥
+
+如果你需要通过 SSH 进行 Git 操作，可以生成 SSH 密钥并添加到你的 Git 托管服务（如 GitHub、GitLab 等）上。
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "your.email@example.com"
+```
+
+### 添加 SSH 密钥到 GitHub
+
+登录 GitHub 并访问 Settings -> SSH and GPG keys -> New SSH key。
+
+将生成的公钥(~/.ssh/id_rsa.pub)内容复制到 Key 文本框，并添加一个 Title（如“GitHub 密钥”）。
+
+点击 Add SSH key 按钮完成添加。
+
+### 测试 SSH 连接
+
+```bash
+ssh -T git@github.com
+```
+
+如果能成功连接，说明 SSH 密钥配置成功。
+
+### 配置第二台电脑
+
+如果要在另一台电脑上使用同样的 SSH 密钥，需要将公钥添加到 GitHub 账户中。
+
+~/.ssh/id_rsa复制到另一台电脑的~/.ssh/目录下。第一次使用时会询问是否信任该密钥，输入 yes 确认。
